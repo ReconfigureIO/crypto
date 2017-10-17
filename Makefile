@@ -11,7 +11,7 @@ PROJECT_URL := "https://github.com/ReconfigureIO/$(NAME)"
 .PHONY: test vendor
 
 test:
-	go test github.com/ReconfigureIO/crypto
+	go test github.com/ReconfigureIO/crypto/md5
 
 vendor: examples/md5/vendor/github.com/ReconfigureIO/$(NAME)/md5
 
