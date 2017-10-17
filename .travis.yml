@@ -1,0 +1,16 @@
+language: go
+go_import_path: github.com/ReconfigureIO/crypto
+
+go:
+  - 1.9
+
+install:
+- curl -LO https://s3.amazonaws.com/reconfigure.io/reco/releases/reco-v0.2.0-x86_64-linux.zip
+- unzip reco-v0.2.0-x86_64-linux.zip
+- sudo mv reco /usr/local/bin
+- reco version
+
+script:
+  - make test
+  - make vendor
+  - cd examples/md5 && reco check
