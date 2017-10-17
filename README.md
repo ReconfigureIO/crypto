@@ -38,6 +38,17 @@ $ glide get github.com/ReconfigureIO/crypto
 You should now see it in your `vendor` directory.
 
 ```
+$ tree vendor
+vendor
+└── github.com
+    └── ReconfigureIO
+        └── crypto
+            └── md5
+                ├── host
+                │   └── md5.go
+                ├── md5.go
+                └── md5_test.go
+
 ```
 
 Contributing
