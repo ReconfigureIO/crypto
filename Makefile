@@ -17,4 +17,4 @@ vendor: examples/md5/vendor/github.com/ReconfigureIO/$(NAME)/md5
 
 examples/md5/vendor/github.com/ReconfigureIO/$(NAME)/md5: md5
 	mkdir -p examples/md5/vendor/github.com/ReconfigureIO/$(NAME)/
-	cp md5 examples/md5/vendor/github.com/ReconfigureIO/$(NAME)/md5
+	cp -r md5 examples/md5/vendor/github.com/ReconfigureIO/$(NAME)/md5
