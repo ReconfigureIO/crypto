@@ -11,10 +11,10 @@ PROJECT_URL := "https://github.com/ReconfigureIO/$(NAME)"
 .PHONY: test vendor
 
 test:
-	go build md5/md5.go
+	go test github.com/ReconfigureIO/crypto
 
 vendor: examples/md5/vendor/github.com/ReconfigureIO/$(NAME)/md5
 
-examples/mult/vendor/github.com/ReconfigureIO/$(NAME)/md5: md5
-	mkdir -p examples/mult/vendor/github.com/ReconfigureIO/$(NAME)/
-	cp md5 examples/mult/vendor/github.com/ReconfigureIO/$(NAME)/md5
+examples/md5/vendor/github.com/ReconfigureIO/$(NAME)/md5: md5
+	mkdir -p examples/md5/vendor/github.com/ReconfigureIO/$(NAME)/
+	cp md5 examples/md5/vendor/github.com/ReconfigureIO/$(NAME)/md5
