@@ -14,6 +14,6 @@ install:
 
 script:
   - make test
-  - make vendor
   - make install
+  - make vendor
   - cd examples/md5 && reco check
