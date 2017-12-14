@@ -3,8 +3,8 @@ package main
 import (
 	"encoding/binary"
 	"encoding/hex"
+	"github.com/ReconfigureIO/sdaccel/xcl"
 	"log"
-	"xcl"
 
 	"github.com/ReconfigureIO/crypto/md5/host"
 )
