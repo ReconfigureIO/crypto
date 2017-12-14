@@ -22,7 +22,7 @@ func ProcessMD5(
 	blocks := make(chan [16]uint32)
 
 	go func() {
-		num32s := numBlocks << 4
+		num32s := uint32(numBlocks << 4)
 		block := [16]uint32{}
 
 		data := make(chan uint32)
