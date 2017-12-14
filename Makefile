@@ -15,8 +15,8 @@ test:
 
 vendor: examples/md5/vendor/github.com/ReconfigureIO/$(NAME)/md5
 
-install:
-	glide install
+install: vendor
+	cd examples/md5 && glide install
 
 examples/md5/vendor/github.com/ReconfigureIO/$(NAME)/md5: md5
 	mkdir -p examples/md5/vendor/github.com/ReconfigureIO/$(NAME)/
