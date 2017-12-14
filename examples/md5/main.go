@@ -2,10 +2,10 @@ package main
 
 import (
 	// import the entire framework (including bundled verilog)
-	_ "sdaccel"
+	_ "github.com/ReconfigureIO/sdaccel"
 	// Use the new AXI protocol package
-	aximemory "axi/memory"
-	axiprotocol "axi/protocol"
+	aximemory "github.com/ReconfigureIO/sdaccel/axi/memory"
+	axiprotocol "github.com/ReconfigureIO/sdaccel/axi/protocol"
 
 	"github.com/ReconfigureIO/crypto/md5"
 )
@@ -22,7 +22,7 @@ func ProcessMD5(
 	blocks := make(chan [16]uint32)
 
 	go func() {
-		num32s := numBlocks << 4
+		num32s := uint32(numBlocks << 4)
 		block := [16]uint32{}
 
 		data := make(chan uint32)

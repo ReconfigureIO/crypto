@@ -1,0 +1,15 @@
+hash: e749c38e3edbe6b8896933f27225779e517350d8143aa46937fcf472c407fb0c
+updated: 2017-12-14T15:04:06.148846146Z
+imports:
+- name: github.com/ReconfigureIO/crypto
+  version: b049ae1e9ced35c51587f3af3f3fa66bff3c3739
+  subpackages:
+  - md5
+  - md5/host
+- name: github.com/ReconfigureIO/sdaccel
+  version: e93e5713d49cc1354dcd1d35cfaef85ba151e0a3
+  subpackages:
+  - axi/memory
+  - axi/protocol
+  - xcl
+testImports: []

@@ -1,0 +1,11 @@
+package: .
+import:
+- package: github.com/ReconfigureIO/crypto
+  subpackages:
+  - md5
+  - md5/host
+- package: github.com/ReconfigureIO/sdaccel
+  subpackages:
+  - axi/memory
+  - axi/protocol
+  - xcl
